@@ -1,0 +1,111 @@
+/* Estilos generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden; /* Evitar scroll */
+}
+
+/* Video de fondo */
+#background-video {
+    position: fixed; /* Fija el video en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que cubra toda la pantalla */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Estilo del formulario y contenido */
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+form {
+    position: relative;
+    margin-top: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 8px; /* Aumentado padding para evitar que los campos toquen los bordes */
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Estilo al recibir el foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #1858cffb;
+    outline: none;
+    background-color: #e6f7ff;
+}
+
+/* Botón de envío */
+button {
+    background-color: #0152affb;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5293df;
+}
+
+/* Enlace de "Volver al Foro" */
+p a {
+    color: #f6f8fa;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a:hover {
+    color: #0450a7;
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+    font-size: 1rem;
+    color: #065ca3;
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: flex-start; /* Alineación de etiquetas al principio */
+    margin-bottom: 5px;
+}
+
+/* Espaciado adecuado entre los campos del formulario */
+form input {
+    margin-bottom: 15px; /* Aseguramos un mayor espacio entre los campos */
+}
+
+/* Añadir padding al formulario para que no quede pegado a los bordes */
+form {
+    padding: 30px;
+}

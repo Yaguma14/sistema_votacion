@@ -1,0 +1,175 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: #b39797;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Agregar posición relativa para los elementos en el body */
+}
+
+/* Estilo para el video de fondo */
+#background-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; /* Envía el video detrás del contenido */
+}
+
+h2, h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #0a77e4;
+    padding-bottom: 10px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #1558d3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #74baff;
+}
+
+/* Centrar la tabla y el enlace */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo de la tabla extendida */
+table {
+    width: 90%; /* Ocupa el 90% del ancho del contenedor */
+    max-width: 1000px; /* Máximo ancho */
+    margin: 20px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(226, 219, 219, 0.2);
+    border: 2px solid #c9d6e2;
+}
+
+/* Estilo general de los botones en la tabla */
+table td a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Botón de Eliminar */
+table td a[href*="eliminar"] {
+    color: #ffffff;
+    background-color: #f44336; /* Rojo */
+    border: 1px solid #d32f2f;
+}
+
+table td a[href*="eliminar"]:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+    transform: scale(1.05);
+}
+
+/* Botón de Editar */
+table td a[href*="mostrarFormularioEdicion"] {
+    color: #ffffff;
+    background-color: #4caf50; /* Verde */
+    border: 1px solid #388e3c;
+}
+
+table td a[href*="mostrarFormularioEdicion"]:hover {
+    background-color: #388e3c; /* Verde oscuro */
+    transform: scale(1.05);
+}
+
+
+/* Encabezados */
+th {
+    background-color: #067cf1;
+    color: #ffffff;
+    padding: 12px;
+}
+
+td {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    color: #555;
+}
+
+/* Estilo del enlace de volver */
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1654d8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    
+}
+
+.back-link:hover {
+    background-color: #4e67d6;
+    transform: scale(1.05);
+    
+}

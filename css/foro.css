@@ -1,0 +1,217 @@
+/* General */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Fondo de video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(243, 235, 235, 0.397);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+/* Títulos */
+h2 {
+    font-size: 2.5rem;
+    color: #004799fb;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #025191;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Menú de usuario */
+.user-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0152affb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.user-menu a:hover {
+    background-color: #5293df;
+}
+
+/* Barra de búsqueda */
+.buscador {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.barra-buscar {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #0152affb;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.barra-buscar:focus {
+    border-color: #5293df;
+}
+
+.boton-buscar {
+    padding: 10px 15px;
+    background-color: #0152affb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-buscar:hover {
+    background-color: #5293df;
+    transform: scale(1.05);
+}
+
+/* Publicaciones */
+.publicacion {
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.publicacion h4 {
+    font-size: 1.2rem;
+    color: #025191;
+}
+
+.publicacion p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.publicacion small {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* Campo de etiquetas */
+.etiquetas {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    background-color: #5293df;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.etiqueta:hover {
+    background-color: #0152affb;
+}
+/* Enlaces y botones */
+.enlace-comentar {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #025191;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.enlace-comentar:hover {
+    background-color: #5293df;
+    transform: scale(1.05);
+}
+
+.boton-votar {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0152affb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-votar:hover {
+    background-color: #5293df;
+}
+
+/* Paginación */
+.paginacion a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #025191;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.paginacion a:hover {
+    background-color: #5293df;
+}
+
+.paginacion a.activa {
+    background-color: #5293df;
+    font-weight: bold;
+}
+
+.mensaje-votacion {
+    color: #ffffff;
+    background-color: rgba(0, 128, 0, 0.8); /* Fondo similar al estilo verde o neutro */
+    padding: 5px 10px; /* Menos espacio alrededor del texto */
+    margin: 10px auto; /* Centrado horizontalmente */
+    border-radius: 5px;
+    font-size: 0.875rem; /* Texto más pequeño */
+    text-align: center; /* Centrado del texto dentro del contenedor */
+    font-weight: bold;
+    max-width: 400px; /* Limitar el ancho del mensaje */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+    overflow: hidden; /* Ocultar el desbordamiento si el texto es largo */
+    text-overflow: ellipsis; /* Poner puntos suspensivos si el texto se corta */
+    
+    /* Asegurarse de que el contenedor ocupe el espacio disponible */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,164 @@
+/* Contenedor del video de fondo */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(240, 240, 255, 0.85);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* Aumentada la opacidad para mejor legibilidad */
+    padding: 30px; /* Aumentado el padding para más espacio */
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    margin-top: 60px; /* Separación del borde superior */
+}
+
+/* Estilo del título */
+h2 {
+    font-size: 2.5rem;
+    color: #2f8de6;
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #14539b;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 80%; /* Reducir el tamaño de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 12px; /* Ajustar el padding */
+    text-align: center;
+}
+
+th {
+    background-color: #14539b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #e9f5ff;
+}
+
+tr:hover {
+    background-color: rgba(130, 158, 249, 0.3); /* Aumentada la opacidad en hover */
+}
+
+/* Estilos de los enlaces en acciones */
+a {
+    color: #0e61e6;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #3c97d4;
+    transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+/* Estilos del formulario de edición */
+#formularioEdicion {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #2f8de6; /* Color de borde al enfocar */
+}
+
+/* Botón de envío */
+button {
+    background-color: #80b5e7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1a6ea1;
+    color: #000;
+    transform: scale(1.05);
+    
+}
+
