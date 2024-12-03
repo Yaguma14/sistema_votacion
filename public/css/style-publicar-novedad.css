@@ -1,0 +1,173 @@
+/* Estilos generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: auto; /* Evitar scroll */
+}
+
+/* Video de fondo */
+#background-video {
+    position: fixed; /* Fija el video en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que cubra toda la pantalla */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Estilo del contenido */
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+h3 {
+    padding: 2px;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del formulario */
+form {
+    position: relative;
+    margin-top: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+/* Estilo cuando el campo está en foco */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #1858cffb; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+    background-color: #e6f7ff; /* Color de fondo al enfocar */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #0152affb;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Transición para el hover */
+}
+
+button:hover {
+    background-color: #5293df;
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+}
+
+/* Enlace de "Volver al Panel" */
+p a {
+    color: #0e66da;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    transition: color 0.3s; /* Transición suave para el color */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+p a:hover {
+    color: #fafafa;
+    text-shadow: 2px 2px 4px rgb(3, 68, 247);
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+    font-size: 1rem;
+    color: #065ca3;
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: flex-start; /* Alineación de etiquetas al principio */
+    margin-bottom: 5px;
+}
+
+/* Estilo de la tabla de novedades */
+table {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    margin: 20px auto; /* Centrar el contenedor */
+    max-width: 90%; /* Limitar el ancho */
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f1f1f1;
+    font-weight: bold; /* Negrita para encabezados */
+}
+
+/* Estilo para las filas de la tabla */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table button {
+    background-color: #3344df;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas para los botones */
+    color: white;
+}
+
+table button:hover {
+    background-color: #1d3da0;
+}
+
+/* Estilo para los enlaces de eliminación */
+table a {
+    color: #d9534f; /* Rojo para resaltar el enlace de eliminación */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el color */
+}
+
+table a:hover {
+    background-color: #d9534f;
+    color: white; /* Cambia el color a blanco cuando el enlace se pase por encima */
+}
+

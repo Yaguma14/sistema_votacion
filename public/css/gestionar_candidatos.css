@@ -1,0 +1,281 @@
+/* Contenedor del video de fondo */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f981;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(233, 223, 223, 0.945);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(239, 240, 241, 0.295);
+}
+
+/* Otras reglas CSS que ya tienes se mantienen igual... */
+
+/* Reglas de animación */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Otros estilos siguen igual */
+
+
+h2, h3 {
+    color: #1156a5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #0d3f77;
+    padding-bottom: 10px;
+}
+
+/* Mensajes de éxito y error */
+.success, .error {
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffffb0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+
+
+
+/* Estilo para el selector de archivo */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #0c4f9b;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #67a3d8;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #0c4f9b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #67a3d8;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff;
+    animation: fadeIn 1s ease;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #14539b;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+    animation: fadeInRow 0.6s ease;
+}
+
+@keyframes fadeInRow {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+td a {
+    color: #1851ce;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #d7ebf8;
+}
+
+/* Imagen en la tabla */
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+/* Enlace de volver */
+p a {
+    color: #ffffff;
+    background-color: #0e36b9;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #cbcdd3ee;
+    color: #1046b9;
+}
+
+/* Contenedor de contenido principal */
+.content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(239, 240, 241, 0.89);
+}

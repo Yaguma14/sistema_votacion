@@ -1,0 +1,215 @@
+/* Estilos para el video de fondo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.85; /* Ajusta la opacidad si deseas */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(210, 233, 248, 0.85), rgba(176, 224, 240, 0.85));
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2a4d69;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2a4d69;
+    padding-bottom: 10px;
+    animation: slideInDown 0.8s ease-in-out;
+}
+
+.publicacion {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 12px rgba(27, 25, 25, 0.08);
+    transition: box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.publicacion:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.comentario {
+    background-color: #f3f9fe;
+    border-left: 4px solid #4a90e2;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 600px;
+    animation: fadeInComment 0.6s ease forwards;
+    opacity: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo para el botón de "Enviar comentario" */
+button {
+    background-color: #1a5599;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Animación en el estado hover */
+button:hover {
+    background-color: #247cd4;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al hacer clic en el botón */
+button:active {
+    transform: translateY(0) scale(1);
+    background-color: #1a4a80;
+}
+
+
+/* Estilo para el enlace de "Volver al Foro" */
+.back-link a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a5599;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.back-link a:hover {
+    background-color: #3587da;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link a:active {
+    transform: scale(0.98);
+}
+
+.forum-link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0152affb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.forum-link:hover {
+    background-color: #5293df; /* Azul claro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+
+/* Animaciones */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInComment {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
